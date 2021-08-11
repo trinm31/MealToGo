@@ -16,7 +16,7 @@ import {
   Icon,
 } from "./restaurant-info-card.styles";
 
-export const RestaurantInfoCard = ({ restaurant = {} }) => {
+export const RestaurantInfoCard = ({ restaurants = {} }) => {
   const {
     name = "Some Restaurant",
     icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
@@ -27,7 +27,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     isOpenNow = true,
     rating = 4,
     isClosedTemporarily = true,
-  } = restaurant;
+  } = restaurants;
 
   const ratingArray = Array.from(new Array(Math.floor(rating)));
 
